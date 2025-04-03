@@ -1,0 +1,134 @@
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiosko Digital Adrián del Pozo</title>
+    
+
+</head>
+     <link rel="stylesheet" href="estilos-kiosco-digital.css">
+
+<body>
+    <h1>KIOSKO DIGITAL</h1>
+  <p id="datetime" style="text-align:center; font-size: 18px;"></p>
+    
+    <table id="newsTable">
+      
+        <tr>
+            <th colspan="2">Prensa Nacional</th>
+        </tr>
+        <tr>
+            <td>
+                <a href="https://www.elpais.com" target="_blank">
+                    <img src="https://www.immersive-culture.com/wp-content/uploads/el-pais-logo.jpg" alt="El País">
+
+                </a>
+            </td>
+            <td>
+                <a href="https://www.elmundo.es" target="_blank">
+                    <img src="https://e00-elmundo.uecdn.es/assets/v26/img/destacadas/elmundo__logo-generica.jpg" alt="El Mundo">
+                </a>
+            </td>
+        </tr>
+       <tr>
+                  <td>
+                <a href="https://www.larazon.es/" target="_blank">
+                    <img src="https://fotografias.larazon.es/clipping/cmsimages02/2024/10/08/87720D76-7E1A-4E97-B866-D6B09FA8B578/razon_96.jpg?crop=892,502,x0,y99&width=1200&height=675&optimize=low&format=jpg" alt="El Mundo">
+                </a>
+            </td>
+<td>
+                <a href="https://www.eldiario.es/" target="_blank">
+                    <img src="https://usuarios.eldiario.es/images/metalogo.png" alt="El Mundo">
+                </a>
+            </td>      
+        </tr>
+
+        <tr>
+            <td>
+                <a href="https://www.abc.es" target="_blank">
+                    <img src="https://media.licdn.com/dms/image/v2/C4E1BAQGTNEd8bcFz0w/company-background_10000/company-background_10000/0/1612187827634/diario_abc_cover?e=2147483647&v=beta&t=nhJ5zQqlTMw6M-90Y6SPKxLkWw10PBqlXnTABnn8x-Q" alt="ABC">
+                </a>
+            </td>
+            <td>
+                <a href="https://www.lavanguardia.com" target="_blank">
+                    <img src="https://media.licdn.com/dms/image/v2/C561BAQETT_0ZZkScDA/company-background_10000/company-background_10000/0/1591713016131/la_vanguardia_cover?e=2147483647&v=beta&t=Azz_kzgadfQ3NgErJVGshKKX0mFeudkkVCSIgd4ohS0" alt="La Vanguardia">
+
+                </a>
+            </td>
+        </tr>
+
+        <!-- Prensa Internacional -->
+        <tr>
+            <th colspan="2">Prensa Internacional</th>
+        </tr>
+        <tr>
+            <td>
+                <a href="https://www.theguardian.com" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/The_Guardian.svg/320px-The_Guardian.svg.png" alt="The Guardian">
+                </a>
+            </td>
+            <td>
+                <a href="https://www.nytimes.com" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/77/The_New_York_Times_logo.png" alt="The New York Times">
+                </a>
+            </td>
+        </tr>
+      <tr>
+            <td>
+                <a href="https://www.bbc.com/mundo/topics/c2lej05epw5t" target="_blank">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzQPUXehRsAHqFEvlKcYHHesnIfJ5oi56oGA&s" alt="The Guardian">
+                </a>
+            </td>
+            <td>
+                <a href="https://www.lemonde.fr/" target="_blank">
+                    <img src="https://storage.googleapis.com/media-newsinitiative/images/Le_Monde_Logo.original.png">
+                </a>
+            </td>
+        </tr>
+
+        <tr>
+            <th colspan="2">Prensa Deportiva</th>
+        </tr>
+        <tr>
+            <td>
+                <a href="https://www.marca.com" target="_blank">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT27sifUcG9Dzy-MfVH0AKXxW7rpdjjBZHJbA&s" alt="Marca">
+
+                </a>
+            </td>
+            <td>
+                <a href="https://www.sport.es" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Logo_Sport.svg/1280px-Logo_Sport.svg.png" alt="Sport">
+
+                </a>
+            </td>
+        </tr>
+      <th colspan="2">Prensa del Corazón</th>
+        </tr>
+        <tr>
+            <td>
+                <a href="https://www.diezminutos.es/" target="_blank">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYW2uCpkCM1-CQksN5mAqgMNIyVdm6cpJbJw&s" alt="10min">
+
+                </a>
+            </td>
+            <td>
+                <a href="https://www.hola.com/" target="_blank">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQaQSsDXglKbneWE_vyiyGImzOE13codv2pA&s" alt="hola">
+
+                </a>
+            </td>
+        </tr>
+    </table>
+  <script>
+ function updateDateTime() {
+            let now = new Date();
+            document.getElementById('datetime').innerText = now.toLocaleString();
+        }
+        setInterval(updateDateTime, 1000);
+        updateDateTime();
+    </script>
+</body>
+
+</html>
