@@ -1,19 +1,34 @@
- body {
+body {
     margin: 0;
     padding: 20px;
-    -webkit-animation: colorChange 15s infinite;
-    animation: colorChange 15s infinite;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS306sGdsov7ui0hIRDy_l_9yYZaKrXcAP_Pw&s");
+    background-size: 1300px; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-attachment: fixed; 
 }
 
-@keyframes colorChange {
-    0% { background-color: #2cff9f; }
-    15% { background-color: #85ffc8; }
-    30% { background-color: #2ef9d1; }
-    45% { background-color: #b0f0fa; }
-    60% { background-color: #37e5e7; }
-    75% { background-color: #73d9bc; }
-    100% { background-color: #9bf3d1; }
+
+
+.video-responsive {
+  width: 980px;
+  margin: 0 auto;   
+  position: relative;
+  padding-bottom: 56.25%; 
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  background: #000;
 }
+
+.video-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 
 h1 {
     text-align: center;
@@ -91,7 +106,7 @@ img:hover {
     transform: scale(1.05);
 }
 
-/* 📱 Estilos para móviles */
+
 @media (max-width: 768px) {
     body {
         padding: 10px;
